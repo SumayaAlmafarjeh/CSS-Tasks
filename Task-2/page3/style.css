@@ -1,0 +1,98 @@
+
+:root{
+    --bg-color: linear-gradient(135deg, #43c6ac, #191654);
+    --primary-green:#008080;
+    --text-main:#333333;
+    --dark-gray:#666666;
+    --light-gray:rgb(182, 182, 182);
+    --text-white:#ffffff;
+    --txt-size-title:32px;
+    --txt-size-normal:16px;
+    --txt-size-secondary:12px;
+    --bg-card:#ffffff;
+    --border-color:#dcdcdc;
+    --border-radius-card: 12px;
+    --border-raduis:6px;
+
+    --txt-light:400;
+    
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: linear-gradient(to bottom, #43c6ac, #43c675a1);
+    background-repeat: no-repeat;     
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.signin-box{
+    width:350px;
+    background-color: var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    padding: 40px;
+    box-shadow:0 4px 12px rgba(0, 0, 0, 0.267);
+
+}
+.green-txt{
+    color: var(--primary-green);
+}
+h1{
+    font-weight: var(--txt-light);
+}
+input[type="email"],input[type="password"] {
+    width: 100%;
+}
+.pass-container{
+    width: 100%;
+}
+.links{
+    color: var(--primary-green);
+}
+
+.signin-btn{
+    background-color: var(--primary-green);
+    color: var(--text-white);
+    border: none;
+    padding: 12px 18px;
+}
+input{
+    border-radius: var(--border-raduis);
+    padding: 12px;
+    outline:none;
+    border: 1px solid var(--light-gray);
+}
+.signin-btn{
+    border-radius: var(--border-raduis);
+}
+label{
+    display: flex;
+    gap: 5px;
+    align-self: flex-start;
+    margin-top: 10px;
+    color: var(--text-main);
+}
+label, .footer-sec div{
+    font-size: var(--txt-size-secondary);
+}
+.footer-sec{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    gap:10px;
+}
