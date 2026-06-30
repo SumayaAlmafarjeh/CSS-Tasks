@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+.container{
+    margin-top: 50px;
+    border:1px solid rgb(0, 0, 0);
+    width:520px;
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+}
+h1{
+    margin: auto;
+    color:rgb(80, 80, 90);
+}
+table,hr{
+    margin-top: 10px;
+}
+table,tr,td,th{
+    border:1px solid rgb(102, 99, 99);
+}
+th,td{
+    padding: 5px;
+}
+th{
+    text-align: right;
+    background-color: yellow;
+}
+.highlighted{
+    background-color: pink;
+}
+.centered{
+    text-align: center;
+}
+.bold{
+    font-weight: 600;
+}
