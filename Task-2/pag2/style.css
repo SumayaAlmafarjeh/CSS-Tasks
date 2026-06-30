@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color:#f0e8e8;
+    --btn-color:rgb(46, 136, 255);
+    --bg-nav:rgb(231, 231, 231);
+    --light-gray:rgb(189, 180, 180);
+    --txt-black:rgb(85, 90, 102);
+    --txt-normal-size:14px;
+    --txt-logo-size:16px;
+    --txt-bold-weight:500;
+    --txt-light-weight:300;
+    --raduis:5px;
+}
+body{
+    font-family:"Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    gap: 40px;
+    margin-top: 10px;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--bg-nav) ;
+    padding: 15px;  
+}
+header div{
+    font-size: var(--txt-logo-size);
+    font-weight: var(--txt-bold-weight);
+    color:var(--txt-black)
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+nav a{
+    text-decoration: none;
+    font-size: var(--txt-normal-size);
+}
+.active-link,label{
+    color: var(--txt-black);
+    font-weight: var(--txt-bold-weight);
+    
+}
+.nav-link{
+    color: var(--txt-black);
+    font-weight: var(--txt-light-weight);
+}
+.signin-box{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label{
+    font-size: var(--txt-normal-size);
+}
+input{
+    outline: none;
+    border: 1px solid var(--light-gray);
+}
+input,.signin-btn{
+    border-radius: var(--raduis);
+    padding: 10px;   
+}
+.signin-btn{
+    background-color: var(--btn-color);
+    border: none;
+    color: white;
+}
