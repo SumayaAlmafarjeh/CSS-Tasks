@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    FLex-direction:column;
+    gap:20px; 
+    font-weight:900;
+
+}
+.orange{
+    background-color:orange;
+   
+}
+.blue{
+    background-color:blue;
+    
+}
+.purple{
+    background-color: blueviolet;
+}
+.black{
+    background-color: black;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.gray{
+    background-color: grey;
+}
+.green1{
+    background-color: green;
+}
+.green2{
+    background-color: rgb(79, 161, 110);
+}
+.green3{
+    background-color: rgb(7, 97, 77);
+}
+.sec1{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height: 100vh;
+   
+}
+.sec1 div{
+    flex-grow: 1; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+.sec2{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.sec2 img{
+    width:32%;
+    height: 250px;
+}
+.sec3{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    border: 7px solid orange;
+    width: 100%;
+
+}
+.sec3 div{
+    width: 25%;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.sec4{
+    display: grid;
+     grid-template-areas:
+    "header header header"
+    "first first second"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 270px 150px;
+    width: 100%;
+    gap: 10px;
+}
+.header{
+    grid-area: header;
+    background-color: black;
+}
+.first{
+    grid-area: first;
+    background-color:orange;
+}
+
+.third{
+    grid-area: second;
+    background-color: green;
+}
+.footer{
+    grid-area: footer;
+    background-color: blue;
+}
+.sec5{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    border: 7px solid orange;
+    width: 100%;
+    height: 100vh;
+
+}
+.sec5 div{
+    width: 11.1%;
+    padding: 40px;
+    text-align: center;
+}
