@@ -1,0 +1,100 @@
+:root{
+    --bg-color: #ece9fd;
+    --text-main:rgb(255, 248, 248);
+    --dark-gray:#9e9696;
+    --txt-gray:rgb(61, 61, 61);
+    --text-white:#ffffff;
+    --txt-size-title:32px;
+    --txt-size-normal:16px;
+    --txt-size-secondary:12px;
+    --bg-card:#a69be0;
+    --bg-border:#8f85c0;
+    --border-radius-card: 18px;
+    --border-raduis:5px;
+    --border-raduis-btn:30px;
+    --txt-light:400;  
+    --txt-medium:600;
+    --txt-bold:800;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+}
+
+.signin-box{
+    width:350px;
+    background-color: var(--bg-card);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding: 30px 20px;
+    box-shadow:0 0px 14px var(--bg-border);
+    color: var(--text-main);
+    font-weight: var(--txt-light);
+
+}
+h1{
+    font-weight: var(--txt-bold);
+}
+.name-container{
+    display: flex;
+    gap: 10px;
+}
+.name-container input{
+    width: 50%;
+}
+
+input[type="email"],input[type="password"], .name-container input,.signup-btn{
+    width: 100%;
+}
+
+
+.signup-btn{
+    background-color: var(--dark-gray);
+    color: var(--txt-gray);
+    border: none;
+    border-radius: var(--border-raduis-btn);
+    padding: 10px;
+    font-weight: var(--txt-medium);
+}
+input{
+    border-radius: var(--border-raduis);
+    padding: 12px;
+    outline:none;
+    border: 1px solid var(--light-gray);
+}
+
+label{
+    display: flex;
+    gap: 5px;
+    align-self: flex-start;
+    margin-top: 10px;
+    color: var(--text-main);
+}
+label, .footer-sec div{
+    font-size: var(--txt-size-secondary);
+}
+.footer-sec{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--txt-light);
+    gap:10px;
+}
+.footer-sec a{
+    color: var(--text-main);
+
+}
